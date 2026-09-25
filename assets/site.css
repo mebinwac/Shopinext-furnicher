@@ -16,7 +16,7 @@
 /* the reference keeps the header on exactly the same gutter as the content;
    the homepage hero is the only full-bleed element on the site */
 @media (min-width:768px){  :root{ --gutter:20px; --head-h:75px; } }
-@media (min-width:1280px){ :root{ --gutter:56px; --head-h:140px; } }
+@media (min-width:1280px){ :root{ --head-h:140px; } }
 
 *,*::before,*::after{box-sizing:border-box;}
 html{-webkit-text-size-adjust:100%;}
@@ -36,7 +36,22 @@ input{font:inherit;}
 h1,h2,h3,h4,p{margin:0;}
 ul{margin:0;padding:0;list-style:none;}
 
-.wrap{padding-inline:var(--gutter);}
+/* Container, matching the reference's Tailwind `.container`:
+   20px padding throughout, max-width 95% from 1280px, hard cap 1532px from 1536px
+   (so content tops out at 1492px and centres on wide screens).
+   The header uses the same container so the logo lines up with the content. */
+.wrap,
+.header-top,
+.header-nav .nav-inner{
+  width:100%;max-width:100%;margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+@media (min-width:1280px){
+  .wrap,.header-top,.header-nav .nav-inner{max-width:95%;}
+}
+@media (min-width:1536px){
+  .wrap,.header-top,.header-nav .nav-inner{max-width:1532px;}
+}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 
 /* ============ header ============ */
@@ -46,7 +61,7 @@ ul{margin:0;padding:0;list-style:none;}
 }
 .header-top{
   display:flex;align-items:center;gap:16px;
-  height:64px;padding-inline:var(--gutter);
+  height:64px;
 }
 .logo{
   font-size:18px;font-weight:700;letter-spacing:.1em;white-space:nowrap;
@@ -58,15 +73,15 @@ ul{margin:0;padding:0;list-style:none;}
   color:var(--muted);font-size:15px;text-align:left;
 }
 .header-search svg{flex:none;color:var(--ink);}
-.header-actions{display:flex;align-items:center;gap:15px;margin-left:auto;}
-.header-actions button{display:flex;align-items:center;}
+.header-actions{display:flex;align-items:center;gap:14px;margin-left:auto;}
+.header-actions button{display:flex;align-items:center;padding:0;}
 .icon-search-m{display:flex;}
 .burger{display:flex;}
 
 .header-nav{background:#000;}
 .header-nav .nav-inner{
   display:none;align-items:center;gap:16px;
-  height:45px;padding-inline:var(--gutter);
+  height:45px;
 }
 .header-nav a{
   display:flex;align-items:center;gap:6px;
@@ -78,13 +93,13 @@ ul{margin:0;padding:0;list-style:none;}
 @media (min-width:768px){
   .header-top{height:75px;}
   .logo{font-size:20px;}
-  .header-actions{gap:18px;}
+  .header-actions{gap:32px;}   /* reference spaces its header icons 32px apart */
 }
 @media (min-width:1280px){
   .header-top{height:95px;}
   .logo{font-size:22px;}
   .header-search{display:flex;}
-  .header-actions{gap:20px;}
+  .header-actions{gap:32px;}
   /* specificity must beat `.header-actions button` above */
   .header-actions .icon-search-m,
   .header-actions .burger{display:none;}
