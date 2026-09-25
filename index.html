@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shopynext — Furniture for every room</title>
+<meta name="description" content="Shopynext — sofas, beds, dining, storage and decor. Handcrafted furniture delivered and assembled at your home." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-top">
+    <a href="index.html" class="logo">SHOPYNEXT</a>
+
+    <button class="header-search" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span>What are you looking for?</span>
+    </button>
+
+    <div class="header-actions">
+      <button class="icon-search-m" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button aria-label="Account">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg>
+      </button>
+      <button aria-label="Wishlist">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.6 12 20 12 20Z"/></svg>
+      </button>
+      <button aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 11H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+      </button>
+      <button class="burger" aria-label="Menu" id="burger">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="header-nav">
+    <div class="nav-inner">
+      <a href="category.html">Festive Deals</a>
+      <a href="category.html">Living Room
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+      <a href="category.html">Bedroom &amp; Mattress</a>
+      <a href="category.html">Dining &amp; Kitchen</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= DRAWER ================= -->
+<div class="drawer-backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <span class="logo">SHOPYNEXT</span>
+    <button aria-label="Close" id="drawerClose">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <a href="category.html">Festive Deals</a>
+  <a href="category.html">Living Room</a>
+  <a href="category.html">Bedroom &amp; Mattress</a>
+  <a href="category.html">Dining &amp; Kitchen</a>
+  <a href="category.html">Home Office</a>
+  <a href="category.html">Outdoor</a>
+  <a href="category.html">Decor &amp; Lighting</a>
+</aside>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-track" id="heroTrack">
+      <div class="hero-slide">
+        <img src="images/banner/hero-1.jpg" alt="Modern living room with sofa and daylight" />
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Linnea Collection</p>
+          <h2 class="hero-title">Room for everything.</h2>
+          <p class="hero-sub">Modular sofas from &#8377;47,500 &middot; free delivery &amp; assembly</p>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <img src="images/banner/hero-2.jpg" alt="Living room with fireplace and armchairs" />
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Festive Home Event</p>
+          <h2 class="hero-title">Up to 40% off. Everywhere you sit.</h2>
+          <p class="hero-sub">Sofas, recliners and accent chairs &middot; ends 30 September</p>
+        </div>
+      </div>
+      <div class="hero-slide">
+        <img src="images/banner/hero-3.jpg" alt="Dining room with wooden table and upholstered chairs" />
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Marlow Dining</p>
+          <h2 class="hero-title">Solid wood. Seats six.</h2>
+          <p class="hero-sub">From &#8377;62,000 incl. &#8377;5,000 instant bank discount</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="section wrap">
+    <div class="section-head">
+      <h2>Explore Popular Categories</h2>
+      <a class="see-all" href="category.html">See All
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="carousel">
+      <button class="rail-btn prev" data-rail="catRail" data-dir="-1" aria-label="Previous slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+      </button>
+      <div class="rail" id="catRail">
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/sofas.jpg" alt="Sofas" /></span><span>Sofas</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/beds.jpg" alt="Beds" /></span><span>Beds</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/dining.jpg" alt="Dining Sets" /></span><span>Dining Sets</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/chairs.jpg" alt="Chairs &amp; Stools" /></span><span>Chairs &amp; Stools</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/wardrobes.jpg" alt="Wardrobes" /></span><span>Wardrobes</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/lighting.jpg" alt="Lighting" /></span><span>Lighting</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/mattress.jpg" alt="Mattresses" /></span><span>Mattresses</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/office.jpg" alt="Home Office" /></span><span>Home Office</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/outdoor.jpg" alt="Outdoor" /></span><span>Outdoor</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/decor.jpg" alt="Decor" /></span><span>Decor</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/tv-units.jpg" alt="TV Units" /></span><span>TV Units</span></a>
+        <a class="cat" href="category.html"><span class="cat-img"><img src="images/category/storage.jpg" alt="Storage" /></span><span>Storage</span></a>
+      </div>
+      <button class="rail-btn next" data-rail="catRail" data-dir="1" aria-label="Next slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= PROMO TRIO ================= -->
+  <section class="section wrap">
+    <div class="promo-grid">
+      <a class="promo dark" href="category.html">
+        <img src="images/banner/promo-1.jpg" alt="Modular sectional sofa in a modern living room" />
+        <div class="promo-body">
+          <h3>Weekend Living Sale</h3>
+          <p>Up to 40% off modular sofas and sectionals, built to your layout.</p>
+          <span class="btn-pill">Shop Now</span>
+        </div>
+      </a>
+      <a class="promo centered light" href="category.html">
+        <img src="images/banner/promo-2.jpg" alt="Marlow dining table with six chairs" />
+        <div class="promo-body">
+          <h3>Marlow Dining Collection</h3>
+          <p>From &#8377;62,000 incl. free assembly &amp; delivery.</p>
+          <span class="btn-pill">Shop Now</span>
+        </div>
+      </a>
+      <a class="promo centered onblack" href="category.html">
+        <img src="images/banner/promo-3.jpg" alt="Upholstered bed with bedside tables" />
+        <div class="promo-body">
+          <h3>Bedroom Refresh is Here</h3>
+          <p>Beds, mattresses &amp; storage &mdash; 10-year frame warranty</p>
+          <span class="btn-pill">Shop Now</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= NEW ARRIVALS ================= -->
+  <section class="section wrap">
+    <div class="section-head">
+      <h2>New Arrivals</h2>
+      <a class="see-all" href="category.html">See All
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="carousel">
+      <button class="rail-btn prev" data-rail="newRail" data-dir="-1" aria-label="Previous slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+      </button>
+      <div class="rail" id="newRail"></div>
+      <button class="rail-btn next" data-rail="newRail" data-dir="1" aria-label="Next slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= WIDE FEATURE ================= -->
+  <section class="section wrap">
+    <div class="feature">
+      <img src="images/banner/feature-wide.jpg" alt="Handcrafted furniture in a styled living room" />
+      <div class="feature-copy">
+        <p class="eyebrow">Halden Series</p>
+        <h3>Handcrafted in solid wood.</h3>
+        <span class="btn-pill">Buy Now</span>
+        <p class="fine">From &#8377;14,750.00* or &#8377;1,229.00/mo. for 12 mo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEAL STRIP 1 ================= -->
+  <section class="section wrap">
+    <div class="strip">
+      <div>
+        <h3>There&rsquo;s a deal for you, too</h3>
+        <p>Don&rsquo;t miss a chance to save on pieces you&rsquo;ve been eyeing.</p>
+      </div>
+      <a class="btn-pill" href="category.html">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- ================= NEW THIS SEASON ================= -->
+  <section class="section wrap">
+    <div class="section-head">
+      <h2>New This Season</h2>
+      <a class="see-all" href="category.html">See All
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="carousel">
+      <button class="rail-btn prev" data-rail="seasonRail" data-dir="-1" aria-label="Previous slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+      </button>
+      <div class="rail" id="seasonRail"></div>
+      <button class="rail-btn next" data-rail="seasonRail" data-dir="1" aria-label="Next slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= DEAL STRIP 2 ================= -->
+  <section class="section wrap">
+    <div class="strip">
+      <div>
+        <h3>Earn 5% cash back on furniture</h3>
+        <p>See if you&rsquo;re pre-approved with no credit risk</p>
+      </div>
+      <a class="btn-pill" href="category.html">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- ================= DUO BANNERS ================= -->
+  <section class="section wrap">
+    <div class="duo-grid">
+      <a class="duo" href="category.html">
+        <img src="images/banner/duo-1.jpg" alt="Aspen outdoor lounge set on a patio" />
+        <div class="duo-copy">
+          <h3>Aspen Outdoor<br />Lounge Set</h3>
+          <p>Weather-proof teak. Built for every season.</p>
+          <span class="btn-pill">Shop Now</span>
+        </div>
+      </a>
+      <a class="duo" href="category.html">
+        <img src="images/banner/duo-2.jpg" alt="Aria wall-mounted media console" />
+        <div class="duo-copy">
+          <h3>Aria Media<br />Console</h3>
+          <p>Cable-managed, wall-mounted, effortless.</p>
+          <span class="btn-pill">Shop Now</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED PRODUCTS ================= -->
+  <section class="section wrap">
+    <div class="section-head">
+      <h2>Featured Products</h2>
+      <a class="see-all" href="category.html">See All
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="carousel">
+      <button class="rail-btn prev" data-rail="featRail" data-dir="-1" aria-label="Previous slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+      </button>
+      <div class="rail" id="featRail"></div>
+      <button class="rail-btn next" data-rail="featRail" data-dir="1" aria-label="Next slide">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= FEATURE BAR ================= -->
+  <section class="wrap">
+    <div class="features">
+      <div class="feature-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>
+        <div><strong>Shipped free with love</strong><span>On orders above &#8377;4,999</span></div>
+      </div>
+      <div class="feature-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.4 3.3 8.3 8 9 4.7-.7 8-4.6 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div><strong>Secure Payment</strong><span>UPI, Cards &amp; No-Cost EMI</span></div>
+      </div>
+      <div class="feature-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>
+        <div><strong>Delivered in 3&ndash;10 Days</strong><span>and assembled at your home</span></div>
+      </div>
+      <div class="feature-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v3a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2ZM20 13v3a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z"/></svg>
+        <div><strong>24&times;7 Support</strong><span>Consultations via email</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Shop by</h4>
+        <ul>
+          <li><a href="#">Living Room</a></li>
+          <li><a href="#">Bedroom &amp; Mattress</a></li>
+          <li><a href="#">Dining &amp; Kitchen</a></li>
+          <li><a href="#">Home Office</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h2>Subscribe to our newsletter</h2>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter-note">Get our latest offers and news straight in your inbox.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Copyright 2026 Shopynext, All rights reserved.</span>
+      <span class="sep">|</span>
+      <a href="#">Privacy Policy</a>
+      <span class="sep">|</span>
+      <a href="#">Terms &amp; Conditions</a>
+      <span class="right">Designed by WAC</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
